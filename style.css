@@ -1,0 +1,666 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: white;
+
+}
+
+.main {
+    background-color: #000000;
+}
+
+/* nav start  */
+
+
+
+header {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 100;
+}
+
+nav {
+    max-width: 1430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    gap: 32px;
+    padding: 0 8px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.svg {
+    display: flex;
+    gap: 20px;
+}
+
+nav .firsti {
+    display: none;
+}
+
+
+nav ul {
+    color: #F5F5F7;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 12px;
+    display: flex;
+    gap: 2.3rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+nav .nav-svg1 {
+    fill: #fff !important;
+    color: #fff !important;
+}
+
+
+/* nav end  */
+
+
+
+/* hero start  */
+.hero {
+    background-color: #000;
+    width: 100%;
+    margin-top: 44px;
+}
+
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-contect {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    margin-bottom: 24px;
+}
+
+
+.hero-contect h1 {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.2;
+
+}
+
+.hero-contect h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 18px;
+
+}
+
+.hero-btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero .btn1 {
+    background-color: rgb(0, 102, 204);
+    border: 2px solid rgb(0, 102, 204);
+    border-radius: 30px;
+    padding: 14px 32px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.hero .btn2 {
+    background-color: transparent;
+    border: 2px solid rgb(0, 102, 204);
+    border-radius: 30px;
+    padding: 14px 32px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+
+
+/* hero end  */
+
+
+
+/* iphone air start  */
+.iphone-air {
+    background-color: white;
+    width: 100%;
+    margin-top: 44px;
+}
+
+.iphone-air-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.iphone-air-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iphone-air-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.iphone-air-contect {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    margin-bottom: 24px;
+    width: 40%;
+}
+
+
+.iphone-air-contect h1 {
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.2;
+
+}
+
+.iphone-air-contect h2 {
+    color: black;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 18px;
+    line-height: 1.4;
+
+}
+
+.iphone-air-btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.iphone-air .btn1 {
+    background-color: rgb(0, 102, 204);
+    border: 2px solid rgb(0, 102, 204);
+    border-radius: 30px;
+    padding: 14px 32px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.iphone-air .btn2 {
+    background-color: transparent;
+    border: 2px solid rgb(0, 102, 204);
+    border-radius: 30px;
+    padding: 14px 32px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: black;
+}
+
+/* iphone air end  */
+
+/* mackbook start  */
+.mackbook {
+    background-color: #000;
+    width: 100%;
+    margin-top: 44px;
+}
+
+.mackbook-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.mackbook-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.mackbook-image img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+}
+
+.mackbook-contect {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    margin-bottom: 24px;
+
+}
+
+
+.mackbook-contect h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1.2;
+
+}
+
+.mackbook-contect h2 {
+    color: white;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 18px;
+    ;
+
+}
+
+.mackbook-btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mackbook .btn1 {
+    background-color: rgb(0, 102, 204);
+    border: 2px solid rgb(0, 102, 204);
+    border-radius: 30px;
+    padding: 14px 32px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.mackbook .btn2 {
+    color: rgb(0, 102, 204);
+    background-color: transparent;
+    border: 2px solid rgb(0, 102, 204);
+    border-radius: 30px;
+    padding: 14px 32px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+/* mackbook end  */
+
+/* grid temp 2 start  */
+
+.grid-temp-2 {
+    width: 100%;
+    max-width: 1430px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.parent-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.child-grid {
+    background-color: #f3f3f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 980px;
+    margin: 15px;
+    padding: 20px;
+}
+
+.watch-image {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.watch-image img {
+    width: 650px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transform: scale(1.1);
+}
+
+.grid-contect {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    margin-bottom: 24px;
+}
+
+.grid-contect h1 {
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.grid-contect h3 {
+    color: black;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #86868b;
+    display: block;
+    margin-top: 8px;
+    line-height: 1.6;
+}
+
+.grid-btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.child-grid .btn1 {
+    background-color: rgb(0, 102, 204);
+    border: 2px solid rgb(0, 102, 204);
+    border-radius: 30px;
+    padding: 14px 32px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+   
+}
+
+.child-grid .btn1:hover {
+    background-color: rgb(0, 112, 224);
+}
+
+.child-grid .btn2 {
+    color: rgb(0, 102, 204);
+    background-color: transparent;
+    border: 2px solid rgb(0, 102, 204);
+    border-radius: 30px;
+    padding: 14px 32px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+
+.grid-temp-2 i {
+    color: black;
+    font-size: 3rem;
+    margin-right: 8px;
+}
+
+
+.child-grid-2 {
+    background-color: #000;
+}
+
+.child-grid-2 h1,
+.child-grid-2 h3,
+.child-grid-2 i {
+    color: white;
+}
+
+.child-grid-3 {
+    background-color: #f3f3f8;
+}
+
+.child-grid-4 {
+    background: linear-gradient(180deg, rgba(225, 239, 255, 0.9), rgba(195, 217, 247, 0.9));
+}
+
+.parent-section-grid {
+    background-color: white;
+}
+
+/* grid temp 2 end  */
+
+/* footer start  */
+
+
+footer {
+    width: 80vw;
+    margin: 20px auto auto auto;
+    background-color: black;
+
+}
+
+.parent-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+.child-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.child-footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.child-footer li {
+    color: #86868b;
+    font-size: 12px;
+}
+
+.child-footer h3 {
+    color: #86868b;
+    font-size: 16px;
+}
+
+footer .firstp {
+    font-size: 12px;
+    color: #86868b;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.sep {
+    height: 1px;
+    background-color: #86868b;
+}
+
+footer .secondp {
+    font-size: 12px;
+    color: #86868b;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+
+/* responsive start  */
+
+@media(max-width:1100px) {
+    nav {
+        justify-content: space-evenly;
+        width: 80vw;
+
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav .firsti {
+        display: initial;
+
+    }
+
+    nav .svg {
+        display: flex;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero h2 {
+        font-size: 1.25rem;
+        line-height: 1.4rem;
+    }
+
+    .hero .btn1 {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+
+    .hero .btn2 {
+        font-size: 1rem;
+
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .iphone-air h1 {
+        margin-top: 20px;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+
+    .iphone-air h2 {
+        font-size: 1.25rem;
+        line-height: 1.4;
+
+    }
+
+    .iphone-air .iphone-air-contect {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .iphone-air .btn1 {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .iphone-air img {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .mackbook h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .mackbook h2 {
+        font-size: 1.25rem;
+        line-height: 1.4;
+
+    }
+
+    .mackbook .btn1 {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .parent-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-contect i {
+        font-size: 2rem;
+    }
+
+    .grid-contect h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .grid-contect h3 {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .grid-contect .subtitle {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .grid-temp-2 .btn1 {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+   
+
+
+
+
+}
+
+.btn2:hover {
+    background-color: rgb(0, 102, 204);
+    cursor: pointer;
+    color: white;
+}
+
+/* responsive end  */
