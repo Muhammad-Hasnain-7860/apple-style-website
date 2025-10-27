@@ -471,13 +471,66 @@ nav .nav-svg1 {
 
 /* grid temp 2 end  */
 
+
+/* animation start  */
+
+.animation {
+  width: 100%;
+  overflow: hidden;
+  margin: 50px 0; 
+  box-sizing: border-box;
+}
+
+.grand-parent {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.parent {
+  display: flex;
+  gap: 20px;
+}
+
+
+
+.item img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+
+}
+
+.animation:hover .grand-parent {
+  animation-duration: 30s; 
+}
+
+.animation .item:hover {
+  opacity: 0.75;
+  transition: opacity 0.6s ease;
+  cursor: pointer;
+}
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* animation end  */
+
 /* footer start  */
 
 
 footer {
     width: 80vw;
     margin: 20px auto auto auto;
-    background-color: black;
+    background-color: white;
 
 }
 
@@ -513,7 +566,7 @@ footer {
 footer .firstp {
     font-size: 12px;
     color: #86868b;
-    font-weight: 200;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
@@ -525,7 +578,7 @@ footer .firstp {
 footer .secondp {
     font-size: 12px;
     color: #86868b;
-    font-weight: 200;
+    font-weight: 700;
     margin-top: 10px;
 }
 
@@ -649,6 +702,12 @@ footer .secondp {
         font-size: 1rem;
         padding: 10px 20px;
     }
+
+    .animation img
+     {
+        width: 300px;
+        height: 300px;
+     }
 
    
 
