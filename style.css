@@ -11,7 +11,56 @@
     background-color: #000000;
 }
 
+
+
+/* Loader styles */
+
+/* 🌀 Loader */
+.loader {
+  position: fixed;
+  inset: 0;              
+  background: black;      
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 3s ease-in-out 3s forwards; 
+  
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  border: 7px solid rgb(0, 102, 204);
+  animation: rotateBox 3s linear infinite;
+}
+
+
+.website {
+  opacity: 0;                          
+  animation: fadeIn 1s ease-in-out 3s forwards; 
+}
+
+/* 🪄 Animations */
+@keyframes rotateBox {
+  0% { transform: rotateX(0) rotateY(0); }
+  50% { transform: rotateX(180deg) rotateY(180deg); }
+  100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+
+
+
 /* nav start  */
+
+
 
 
 
@@ -419,7 +468,7 @@ nav .nav-svg1 {
     font-size: 17px;
     color: white;
     cursor: pointer;
-   
+
 }
 
 .child-grid .btn1:hover {
@@ -469,57 +518,139 @@ nav .nav-svg1 {
     background-color: white;
 }
 
+
+
 /* grid temp 2 end  */
 
+
+
+/* more animation start  */
+
+.more-animation {
+    width: 900px;
+    height: 52.25%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.parent-animation-more {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-bottom: 52.25%;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    transform: translateX(100%);
+    animation: slide 12s infinite;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 8s;
+}
+
+.parent-animation-more:hover .slide {
+    animation-play-state:running;
+    cursor: pointer;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  30% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  40% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+
+/* more animation end  */
 
 /* animation start  */
 
 .animation {
-  width: 100%;
-  overflow: hidden;
-  margin: 50px 0; 
-  box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    margin: 50px 0;
+    box-sizing: border-box;
 }
 
 .grand-parent {
-  display: flex;
-  width: max-content;
-  animation: scroll 20s linear infinite;
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
 }
 
 .parent {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 
 
 .item img {
-  width: 400px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 12px;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
 
 }
 
-.animation:hover .grand-parent {
-  animation-duration: 30s; 
-}
 
 .animation .item:hover {
-  opacity: 0.75;
-  transition: opacity 0.6s ease;
-  cursor: pointer;
+    opacity: 0.75;
+    transition: all 0.6s ease;
+    cursor: pointer;
+    filter: blur(2px);
 }
 
 
 @keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 /* animation end  */
@@ -703,13 +834,16 @@ footer .secondp {
         padding: 10px 20px;
     }
 
-    .animation img
-     {
+    .animation img {
         width: 300px;
         height: 300px;
-     }
+    }
 
-   
+    .more-animation {
+        width: 300px;
+        
+    }
+
 
 
 
